@@ -1,0 +1,19 @@
+# HeartGuard – Dependency List
+# Install: pip install -r requirements.txt
+
+# ── Core Scientific Libraries ─────────────────────────────────────────────────
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+
+# ── ECG / PhysioNet Library ───────────────────────────────────────────────────
+wfdb>=4.1
+
+# ── Machine Learning ──────────────────────────────────────────────────────────
+scikit-learn>=1.3
+joblib>=1.3
+
+# ── Deep Learning (Only required for train_ptbxl_model.py) ───────────────────
+# The dashboard (main.py) does NOT use TensorFlow – it uses statistical anomaly detection.
+# Uncomment below if you want to retrain the model from scratch:
+# tensorflow>=2.13

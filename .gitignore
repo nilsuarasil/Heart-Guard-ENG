@@ -1,0 +1,37 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environment ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Large Data Files (License & Distribution Risk) ───────────────────────────
+# PTB-XL metadata CSV (~6.3 MB) – Download from PhysioNet:
+# https://physionet.org/content/ptb-xl/1.0.3/
+ptbxl_database.csv
+
+# ── Model Binary Files (Should be managed with Git LFS) ──────────────────────
+# After installing Git LFS: git lfs migrate import --include="*.h5,*.tflite,*.pkl"
+models/*.h5
+models/*.tflite
+models/*.pkl
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Generated Plots / Outputs ─────────────────────────────────────────────────
+ecg_charts/*.png
+ecg_charts/*.jpg
